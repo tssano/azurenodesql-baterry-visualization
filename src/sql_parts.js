@@ -99,7 +99,8 @@ var isOwnerValid = function( databaseName, deviceKey ){
 			}
 		}).catch(function(err){
 			reject({
-				"isEnableValidationProcedure" : false
+				"isEnableValidationProcedure" : false,
+				"query_str": query_str
 			});
 		});	
 	});
